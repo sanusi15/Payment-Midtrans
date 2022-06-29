@@ -1,0 +1,47 @@
+GET http://localhost:5000/
+
+###
+POST http://localhost:5000/
+Content-Type: application/json
+{
+    "nim": "2057570011",
+    "nama_mahasiswa": "Adi Mulyadi",
+    "idJurusan": "MI",
+    "idSemester": "4"
+}
+
+###
+PATCH  http://localhost:5000/2
+Content-Type: application/json
+{
+    "nim": "2057570020",
+    "nama_mahasiswa": "Sansay",
+    "idJurusan": "MI",
+    "idSemester": "4"
+}
+
+###
+DELETE http://localhost:5000/2
+
+
+###
+GET http://localhost:5000/transaksi
+
+###
+POST http://localhost:5000/transaksi
+Content-Type: application/json
+{
+    "tipe_transaksi" : "bank transfer",
+    "nama_transaksi" : "bni"
+}
+
+###
+PATCH  http://localhost:5000/transaksi/3
+
+{   
+    "tipe_transaksi" : "bank transfer",
+    "nama_transaksi" : "bni"
+}
+
+###
+DELETE http://localhost:5000/transaksi/2
